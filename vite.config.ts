@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: "/swiss-mongol-connect/",
+  build: {
+    sourcemap: true, // ✅ add this
+  },
   server: {
     host: "::",
     port: 8080,
